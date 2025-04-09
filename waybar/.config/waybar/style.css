@@ -1,0 +1,78 @@
+* {
+  font-family: "JetBrains Mono Nerd Font";
+  font-weight: bold;
+  font-size: 15px;
+}
+
+window#waybar {
+  background: @theme_bg_color;
+  border: 3px solid @borders;
+  border-radius: 10px;
+}
+
+/* Clock */
+#clock {
+  margin-right: 15px;
+}
+
+/* Battery */
+#battery {
+  color: @theme_fg_color;
+  font-size: 16px;
+}
+#battery.charging {
+  color: @success_color;
+}
+#battery.warning {
+  color: @warning_color;
+}
+#battery.critical {
+  color: @error_color;
+}
+
+/* Backlight */
+#backlight {
+  padding: 0 5px;
+  color: @theme_fg_color;
+}
+
+/* Sliders (PulseAudio & Backlight) */
+#pulseaudio-slider slider,
+#backlight-slider slider {
+  background: #a1bdce;
+  background-color: transparent;
+  box-shadow: none;
+  margin-right: 7px;
+}
+
+#pulseaudio-slider trough,
+#backlight-slider trough {
+  min-width: 70px;
+  min-height: 6px;
+  border-radius: 8px;
+  background: @theme_selected_fg_color;
+  border: 1px solid @theme_selected_bg_color;
+}
+
+#pulseaudio-slider highlight,
+#backlight-slider highlight {
+  border-radius: 8px;
+  background: @theme_selected_bg_color;
+}
+
+/* Workspaces */
+#workspaces button.active {
+  color: @success_color;
+}
+#workspaces button.urgent {
+  color: @error_color;
+}
+
+/* Tooltip */
+tooltip {
+  background: @theme_bg_color;
+  color: @theme_fg_color;
+  font-size: 13px;
+  border-radius: 7px;
+  border: 2px solid #101a24;
+}

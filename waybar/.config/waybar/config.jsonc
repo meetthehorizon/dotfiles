@@ -1,0 +1,117 @@
+{
+    "layer": "top",
+    "margin": "7 10 0 10",
+    "height": 35,
+    "reload_style_on_change": true,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "spacing": 10,
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "wireplumber",
+        "pulseaudio/slider",
+        "backlight",
+        "backlight/slider",
+        "battery",
+        "clock"
+    ],
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "󰨞",
+            "4": "",
+            "5": "󰷈",
+            "6": "",
+            "active": "",
+            "default": "",
+            "alert": ""
+        },
+        "persistent-workspaces": {
+            "*": 6
+        }
+    },
+    "hyprland/window": {
+        "format": "{class}",
+        "format-icons": {
+            "default": [
+                "",
+                ""
+            ]
+        }
+    },
+    "wireplumber": {
+        "format": "{icon}",
+        "format-muted": "",
+        "on-click": "helvum",
+        "format-icons": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "pulseaudio/slider": {
+        "min": 5,
+        "max": 100,
+        "rotate": 0,
+        "device": "pulseaudio",
+        "scroll-step": 1
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon}",
+        "format-icons": [
+            "󰃞",
+            "󰃟",
+            "󰃝",
+            "󰃠"
+        ],
+        "tooltip": true,
+        "tooltip-format": "{percent}%"
+    },
+    "backlight/slider": {
+        "min": 0,
+        "max": 100,
+        "rotate": 0,
+        "device": "intel_backlight",
+        "scroll-step": 1
+    },
+    "battery": {
+        "interval": 5,
+        "states": {
+            "full": 100,
+            "warning": 20,
+            "critical": 10
+        },
+        "format": "{icon}",
+        "format-alt": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-icons": [
+            "󰂃",
+            "󰂎",
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ],
+        "max-length": 25,
+        "format-time": "{H} h {M} min"
+    },
+    "clock": {
+        "interval": 60,
+        "format": "{:%H:%M}",
+        "format-alt": "{:%Y-%m-%d}",
+        "tooltip-format": "{:%A}"
+    }
+}
