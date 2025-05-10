@@ -10,61 +10,60 @@
   // ──────────────────────────────────────────────────────────┤ positions ├───
 
   "modules-left": [
-    "custom/ws", // window icon
+    "custom/ws",            // window icon
     "custom/left1",
 
-    "hyprland/workspaces", // workspaces
+    "hyprland/workspaces",  // workspaces
     "custom/right1",
 
     "custom/paddw",
-    "hyprland/window" // window title
+    "hyprland/window"       // window title
   ],
 
   "modules-center": [
     "custom/paddc",
     "custom/left2",
-    "custom/temperature", // temperature
+    "custom/temperature",   // temperature
 
     "custom/left3",
-    "memory", // memory
+    "memory",               // memory
 
     "custom/left4",
-    "cpu", // cpu
+    "cpu",                  // cpu
     "custom/leftin1",
 
     "custom/left5",
-    "custom/distro", // distro icon
+    "custom/distro",        // distro icon
     "custom/right2",
 
     "custom/rightin1",
-    "idle_inhibitor", // idle inhibitor
-    "clock#time", // time
+    "idle_inhibitor",       // idle inhibitor
+    "clock#time",           // time
     "custom/right3",
 
-    "clock#date", // date
+    "clock#date",           // date
     "custom/right4",
 
-    "custom/wifi", // wi-fi
-    "bluetooth", // bluetooth
-    "custom/update", // system update
+    "custom/wifi",          // wi-fi
+    "bluetooth",            // bluetooth
+    "custom/update",        // system update
     "custom/right5"
   ],
 
   "modules-right": [
-    "mpris", // media info
+    "mpris",                // media info
 
     "custom/left6",
-    // "pulseaudio", // output device
-    "wireplumber",
+    "pulseaudio",           // output device
 
     "custom/left7",
-    "backlight", // brightness
+    "backlight",            // brightness
 
     "custom/left8",
-    "battery", // battery
+    "battery",              // battery
 
     "custom/leftin2",
-    "custom/power" // power button
+    "custom/power"          // power button
   ],
 
   // ────────────────────────────────────────────────────────┤ window icon ├───
@@ -101,7 +100,8 @@
 
     "rewrite": {
       // ────────────────────────────────────────────────────────── desktop ───
-      "": "<span foreground='#458588'> </span> Hyprland",
+      "": 
+        "<span foreground='#1e66f5'> </span> Hyprland",
 
       // ───────────────────────────────────────────────────────── terminal ───
 
@@ -109,41 +109,55 @@
       "zsh": "  Terminal",
       "kitty": "  Terminal",
 
-      "tmux(.*)": "<span foreground='#98971a'> </span> Tmux",
-
-      // ───────────────────────────────────────────────────────── notes ───
-      "(.*) - (.*) - Obsidian v[0-9.]+": "<span foreground='#b16286'>󱓩 </span> $1 ($2)",
+      "tmux(.*)": 
+        "<span foreground='#40a02b'> </span> Tmux",
 
       // ────────────────────────────────────────────────────────── browser ───
 
-      "(.*)Mozilla Firefox": "<span foreground='#cc241d'>󰈹 </span> Firefox",
-      "(.*) — Mozilla Firefox": "<span foreground='#cc241d'>󰈹 </span> $1",
+      "(.*)Mozilla Firefox": 
+        "<span foreground='#d20f39'>󰈹 </span> Firefox",
+      "(.*) — Mozilla Firefox": 
+        "<span foreground='#d20f39'>󰈹 </span> $1",
 
-      "(.*)Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> Zen Browser",
-      "(.*) — Zen Browser": "<span foreground='#d65d0e'>󰺕 </span> $1",
+      "(.*)Zen Browser": 
+        "<span foreground='#fe640b'>󰺕 </span> Zen Browser",
+      "(.*) — Zen Browser": 
+        "<span foreground='#fe640b'>󰺕 </span> $1",
 
       // ────────────────────────────────────────────────────── development ───
 
-      "(.*) - Visual Studio Code": "<span foreground='#458588'>󰨞 </span> $1",
-      "(.*)Visual Studio Code": "<span foreground='#458588'>󰨞 </span> Visual Studio Code",
+      "(.*) - Visual Studio Code": 
+        "<span foreground='#1e66f5'>󰨞 </span> $1",
+      "(.*)Visual Studio Code": 
+        "<span foreground='#1e66f5'>󰨞 </span> Visual Studio Code",
 
-      "nvim": "<span foreground='#98971a'> </span> Neovim",
-      "nvim (.*)": "<span foreground='#98971a'> </span> $1",
+      "nvim": 
+        "<span foreground='#40a02b'> </span> Neovim",
+      "nvim (.*)": 
+        "<span foreground='#40a02b'> </span> $1",
 
-      "vim": "<span foreground='#98971a'> </span> Vim",
-      "vim (.*)": "<span foreground='#98971a'> </span> $1",
+      "vim": 
+        "<span foreground='#40a02b'> </span> Vim",
+      "vim (.*)": 
+        "<span foreground='#40a02b'> </span> $1",
 
       // ──────────────────────────────────────────────────────────── media ───
 
-      "(.*)Spotify": "<span foreground='#98971a'> </span> Spotify",
-      "(.*)Spotify Premium": "<span foreground='#98971a'> </span> Spotify Premium",
+      "(.*)Spotify": 
+        "<span foreground='#40a02b'> </span> Spotify",
+      "(.*)Spotify Premium": 
+        "<span foreground='#40a02b'> </span> Spotify Premium",
 
-      "OBS(.*)": "<span foreground='#d5c4a1'> </span> OBS Studio",
+      "OBS(.*)": 
+        "<span foreground='#6c6f85'> </span> OBS Studio",
 
-      "VLC media player": "<span foreground='#d65d0e'>󰕼 </span> VLC Media Player",
-      "(.*) - VLC media player": "<span foreground='#d65d0e'>󰕼 </span> $1",
+      "VLC media player": 
+        "<span foreground='#fe640b'>󰕼 </span> VLC Media Player",
+      "(.*) - VLC media player": 
+        "<span foreground='#fe640b'>󰕼 </span> $1",
 
-      "(.*) - mpv": "<span foreground='#b16286'> </span> $1",
+      "(.*) - mpv": 
+        "<span foreground='#8839ef'> </span> $1",
 
       "qView": "  qView",
 
@@ -154,18 +168,25 @@
       // ─────────────────────────────────────────────────────────── social ───
 
       "• Discord(.*)": "Discord$1",
-      "(.*)Discord(.*)": "<span foreground='#458588'> </span> $1Discord$2",
+      "(.*)Discord(.*)": 
+        "<span foreground='#1e66f5'> </span> $1Discord$2",
 
-      "vesktop": "<span foreground='#458588'> </span> Discord",
+      "vesktop": 
+        "<span foreground='#1e66f5'> </span> Discord",
 
       // ──────────────────────────────────────────────────────── documents ───
 
-      "ONLYOFFICE Desktop Editors": "<span foreground='#cc241d'> </span> OnlyOffice Desktop",
+      "ONLYOFFICE Desktop Editors": 
+        "<span foreground='#d20f39'> </span> OnlyOffice Desktop",
 
-      "(.*).docx": "<span foreground='#458588'> </span> $1.docx",
-      "(.*).xlsx": "<span foreground='#98971a'> </span> $1.xlsx",
-      "(.*).pptx": "<span foreground='#d65d0e'> </span> $1.pptx",
-      "(.*).pdf": "<span foreground='#cc241d'> </span> $1.pdf",
+      "(.*).docx": 
+        "<span foreground='#1e66f5'> </span> $1.docx",
+      "(.*).xlsx": 
+        "<span foreground='#40a02b'> </span> $1.xlsx",
+      "(.*).pptx": 
+        "<span foreground='#fe640b'> </span> $1.pptx",
+      "(.*).pdf": 
+        "<span foreground='#d20f39'> </span> $1.pdf",
 
       // ─────────────────────────────────────────────────────────── system ───
       "Authenticate": "  Authenticate"
@@ -254,9 +275,12 @@
       "on-click-right": "mode",
 
       "format": {
-        "months": "<span color='#928374'><b>{}</b></span>",
-        "weekdays": "<span color='#d5c4a1' font='7'>{}</span>",
-        "today": "<span color='#cc241d'><b>{}</b></span>"
+        "months": 
+          "<span color='#7287fd'><b>{}</b></span>",
+        "weekdays": 
+          "<span color='#6c6f85' font='7'>{}</span>",
+        "today": 
+          "<span color='#d20f39'><b>{}</b></span>"
       }
     },
 
@@ -290,11 +314,16 @@
     "format-connected": "󰂱",
     "format-connected-battery": "󰂱",
 
-    "tooltip-format": "{num_connections} connected",
-    "tooltip-format-disabled": "Bluetooth Disabled",
-    "tooltip-format-connected": "{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}",
-    "tooltip-format-enumerate-connected-battery": ":: {device_alias}: 󱊣 {device_battery_percentage}%",
+    "tooltip-format": 
+      "{num_connections} connected",
+    "tooltip-format-disabled": 
+      "Bluetooth Disabled",
+    "tooltip-format-connected": 
+      "{device_enumerate}",
+    "tooltip-format-enumerate-connected": 
+      "{device_alias}",
+    "tooltip-format-enumerate-connected-battery": 
+      ":: {device_alias}: 󱊣 {device_battery_percentage}%",
 
     "on-click": "~/.config/waybar/scripts/bluetooth-menu.sh",
     "on-click-right": "kitty --title '󰂯  Bluetooth TUI' bash -c bluetui",
@@ -323,11 +352,11 @@
 
     "player-icons": {
       "default": "󰝚 ",
-      "spotify": "<span foreground='#98971a'>󰓇 </span>",
-      "firefox": "<span foreground='#cc241d'>󰗃 </span>"
+      "spotify": "<span foreground='#40a02b'>󰓇 </span>",
+      "firefox": "<span foreground='#d20f39'>󰗃 </span>"
     },
     "status-icons": {
-      "paused": "<span color='#928374'>\u200A\u200A󰏤\u2009\u2009</span>"
+      "paused": "<span color='#7287fd'>\u200A\u200A󰏤\u2009\u2009</span>"
     },
 
     "tooltip-format": "Playing: {title} - {artist}",
@@ -352,19 +381,6 @@
     "on-click": "~/.config/waybar/scripts/volume-control.sh -o m",
     "on-scroll-up": "~/.config/waybar/scripts/volume-control.sh -o i",
     "on-scroll-down": "~/.config/waybar/scripts/volume-control.sh -o d",
-    "min-length": 6,
-    "max-length": 6
-  },
-
-  "wireplumber": {
-    "format": "{icon} {volume}%",
-    "format-muted": "󰝟 {volume}%",
-
-    "format-icons": {
-      "default": ["󰕿", "󰖀", "󰕾"],
-      "headphone": "󰋋",
-      "headset": "󰋋"
-    },
     "min-length": 6,
     "max-length": 6
   },
