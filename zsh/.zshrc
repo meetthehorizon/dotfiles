@@ -70,11 +70,9 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
 
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete you-should-use)
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -102,14 +100,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-y() {
-    local yazi_dir
-    yazi "$@"  # Run Yazi with any provided arguments
-    yazi_dir=$(cat "${XDG_RUNTIME_DIR:-/tmp}/yazi-cwd" 2>/dev/null) # Read last known directory from Yazi
-    if [ -n "$yazi_dir" ] && [ -d "$yazi_dir" ]; then
-        cd "$yazi_dir"
-    fi
-}
-
-neofetch
