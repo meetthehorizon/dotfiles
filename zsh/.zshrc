@@ -7,6 +7,7 @@ bindkey -e
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/conart/.zshrc'
 
+setopt autocd
 autoload -Uz compinit
 compinit
 
