@@ -1,0 +1,14 @@
+[Unit]
+Description=Rclone Documents
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=rclone bisync $HOME/Documents/$USER onedrive:Documents/$USER --progress $HOME/.rclone-docs.log
+Nice=10
+IOSchedulingClass=best-effort
+
+[Install]
+WantedBy=default.target
+
