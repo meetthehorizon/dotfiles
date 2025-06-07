@@ -1,8 +1,7 @@
 #!/bin/bash
 
-BAR="$1"
-CONFIG_DIR="$HOME/.config/waybar/$BAR"
-PIDFILE="/tmp/waybar-$BAR.pid"
+CONFIG_DIR="$HOME/.config/waybar"
+PIDFILE="/tmp/waybar.pid"
 
 if [[ -f "$PIDFILE" ]] && kill -0 "$(cat "$PIDFILE")" 2>/dev/null; then
     kill "$(cat "$PIDFILE")" && rm "$PIDFILE"
