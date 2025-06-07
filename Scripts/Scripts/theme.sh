@@ -13,9 +13,5 @@ swww img "$WALL" --transition-type center --transition-duration 1 --transition-f
 eww reload
 
 # Restart waybar
-if pgrep -x waybar >/dev/null; then
-    killall waybar
-    waybar &
-else
-    waybar &
-fi
+~/.config/waybar/toggle.sh
+~/.config/waybar/toggle.sh
