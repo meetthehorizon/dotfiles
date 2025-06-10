@@ -9,7 +9,14 @@
   // modules
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["backlight", "wireplumber", "battery", "network", "clock"],
+  "modules-right": [
+    "custom/fan",
+    "backlight",
+    "wireplumber",
+    "battery",
+    "network",
+    "clock"
+  ],
 
   "hyprland/workspaces": {
     "format": "{icon} {windows}",
@@ -52,6 +59,13 @@
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50
   },
+
+  "custom/fan": {
+    "format": "󰈐",
+    "tooltip-format": "Fan Boost",
+    "on-click": "kitty -e bash ~/Scripts/fanboost.sh"
+  },
+
   "backlight": {
     "format": "{percent}% {icon}",
     "format-icons": [

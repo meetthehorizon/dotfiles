@@ -27,8 +27,9 @@ tooltip label {
 }
 
 /* general configuration to be passed to every module */
-#window, #clock, #network, #wireplumber, #battery, #backlight,
-#workspaces button {
+#window, #clock, #network, #wireplumber, 
+#battery, #backlight, #workspaces button,
+#custom-fan {
     padding: 5px;
     background: alpha(@background, 0.5);
     color: @foreground;
