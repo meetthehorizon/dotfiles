@@ -1,12 +1,10 @@
 (defwidget greeter [?text name]
-  (box :orientation "horizontal"
-    :halign "center"
-    text
-    (button :onclick "notify-send 'Hello' 'Hello, $name'"
-    "Greet")))
+  (box
+    (box :class "first" (children :nth 0))
+    (box :class "second" (children :nth 1)))
+)
 
-
-(defwindow example
+(defwindow main
   :monitor 0
   :geometry (geometry :x "0%"
     :y "20px"
@@ -17,6 +15,10 @@
   :reserve (struts :distance "40px" :side "top")
   :windowtype "dock"
   :wm-ignore false
-  (greeter :text "Say hello!"
-  :name "Tim")
+  (greeter :name "Container with Children"
+    (button :onclick "notify-send 'Hello' 'Hello, conart'"
+    "Greet")
+    (button :onclick "notify-send 'Hello' 'Hello, conart'"
+    "Greet")
+  )
 )
