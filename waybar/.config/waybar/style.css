@@ -56,9 +56,9 @@ tooltip label {
 
 /* things you should proably take a look at */
 #battery.format-bat_0, #battery.format-bat_10, #battery.format-bat_20 
-#network.disabled, #network.disconnected {
+#network.disabled, #network.disconnected, #wireplumber.muted {
     background: @background;
     color: @foreground;
-    border-top: 3px solid @color1;
-    border-bottom: 3px solid @color1;
+    border-top: 2px solid @color1;
+    border-bottom: 2px solid @color1;
 }
