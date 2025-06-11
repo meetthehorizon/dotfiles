@@ -1,0 +1,82 @@
+@import "~/.cache/wal/colors-rofi-light.rasi"
+
+configuration {
+    modi: "window,drun,run,ssh";
+    mode: "drun";
+    sidebar-mode: true;
+    lines: 10;
+    width: 40%;
+    show-icons: true;
+    window-radius: 8;
+    padding: 12px;
+    font: "Monospace 12";
+    prompt: " Rofi Launcher";
+}
+
+#inputbar {
+    spacing: 0;
+    padding: 4px 8px;
+}
+
+#message {
+    str: " Rofi Launcher";
+    horizontal-align: 0.5;
+    padding: 8px 0;
+    text-color: @active-foreground;
+    font: "Monospace Bold 14";
+    border: 0;
+}
+
+entry, element-text {
+    placeholder: "Type to search...";
+    cursor: pointer;
+    text-color: @foreground;
+    space: 5px;
+}
+
+element {
+    orientation: horizontal;
+    children: [ element-icon, element-text ];
+    spacing: 8px;
+    padding: 2px 4px;
+}
+
+element-icon {
+    size: 2em;
+}
+
+element-text {
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    text-color: @foreground;
+}
+
+#sidebar {
+    padding: 8px;
+    scrollbar: false;
+}
+
+button {
+    border: 0;
+    padding: 4px;
+    margin: 2px 0;
+    text-color: @normal-foreground;
+}
+
+button.selected {
+    background-color: @selected-normal-background;
+    text-color: @selected-normal-foreground;
+}
+
+#listview {
+    fixed-height: 0;
+    border: 0;
+    spacing: 4px;
+    padding: 4px 0;
+    scrollbar: true;
+}
+
+#scrollbar {
+    width: 4px;
+    handle-width: 8px;
+}
