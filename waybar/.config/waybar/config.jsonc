@@ -30,7 +30,9 @@
       "rofi": "󰮫",
       "spotify": "󰓇",
       "steam": "󰓓",
-      "class<zen>": "󰈹"
+      "class<zen>": "󰈹",
+      "class<vlc>": "󰕼",
+      "zathura": "󱔗"
     }
   },
 
@@ -41,7 +43,8 @@
       "Spotify Premium": "Spotify",
       "(.*)- Visual Studio Code": "VS Code",
       "(.*) — Zen Browser": "Zen",
-      "(.*) - fish": "> [$1]"
+      "(.*) - fish": "> [$1]",
+      "(.*).(.*).zathura": "Zathura"
     },
     "separate-outputs": true
   },
