@@ -1,0 +1,6 @@
+[Unit]
+Description=Rclone multi bisync job
+
+[Service]
+Type=oneshot
+ExecStart=/home/conart/Scripts/rclone-bisync.sh

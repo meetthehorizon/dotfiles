@@ -1,0 +1,10 @@
+[Unit]
+Description=Run rclone-multi bisync every hour
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+
