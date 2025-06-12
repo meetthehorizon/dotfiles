@@ -67,7 +67,7 @@
   "custom/fan": {
     "format": "󰈐",
     "tooltip-format": "Fan Boost",
-    "on-click": "kitty -e bash ~/Scripts/fanboost.sh"
+    "on-click": "wezterm start -- bash -c '~/Scripts/fanboost.sh'"
   },
 
   "backlight": {
