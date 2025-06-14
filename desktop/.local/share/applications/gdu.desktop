@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Disk Usage
+Comment=Analyze disk usage with gdu (terminal)
+Exec=wezterm start gdu
+Icon=gdu
+Terminal=false
+Type=Application
+Categories=Utility;System;
+

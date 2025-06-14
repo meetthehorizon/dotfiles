@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Network
+Comment=Launch nmtui in WezTerm
+Exec=wezterm start -- nmtui
+Icon=network
+Terminal=false
+Type=Application
+Categories=Network;System;Utility;

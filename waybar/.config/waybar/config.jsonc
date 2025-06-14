@@ -25,14 +25,20 @@
     "window-rewrite": {
       "code": "󰨞",
       "kitty": "",
-      "wezterm": "",
+      "class<org.wezfurlong.wezterm>": "",
+      "class<org.wezfurlong.wezterm> title<Yazi.*>": "󰉓",
+      "class<org.wezfurlong.wezterm> title<gdu>": "",
+      "class<org.wezfurlong.wezterm> title<nmtui>": "󰛳",
       "obsidian": "󰠮",
-      "rofi": "󰮫",
+      "rofi": "",
       "spotify": "󰓇",
       "steam": "󰓓",
       "class<zen>": "󰈹",
       "class<vlc>": "󰕼",
-      "zathura": "󱔗"
+      "zathura": "󱔗",
+      "class<discord>": " ",
+      "Lutris": "󰊗",
+      "title<bluetuith>": "󰂱"
     }
   },
 
@@ -131,7 +137,8 @@
 
   "clock": {
     "format": "{:%H:%M (%Z)}",
-    "tooltip-format": "{tz_list}",
+    "tooltip-format": "{:%Y-%m-%d}\n{tz_list}",
+
     "timezones": [
       "Asia/Kolkata",
       "Asia/Tokyo",

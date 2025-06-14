@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Bluetuith
+GenericName=Bluetooth Manager (TUI)
+Comment=Manage Bluetooth devices from terminal
+Exec=wezterm start bluetuith
+Icon=bluetooth
+Terminal=false
+Type=Application
+Categories=Utility;Network;
+Keywords=bluetooth;tui;bluetuith;
+

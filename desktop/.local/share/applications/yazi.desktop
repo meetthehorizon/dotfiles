@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Yazi
+Exec=wezterm start yazi %U
+Terminal=false
+Type=Application
+MimeType=inode/directory;
+NoDisplay=false
+Categories=Utility;
+Icon=yazi
