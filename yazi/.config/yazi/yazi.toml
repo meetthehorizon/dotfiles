@@ -1,0 +1,7 @@
+[opener]
+open = [
+	{ run = 'xdg-open "$@"', desc = "Open" },
+]
+edit = [
+	{ run = 'vim "$@"', block = true },
+]
