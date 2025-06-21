@@ -38,7 +38,9 @@
       "class<discord>": "󰙯",
       "Lutris": "󰊗",
       "title<bluetuith>": "󰂱",
-      "class<Graveyard.*8z>": "󰮢󰜐"
+      "class<Graveyard.*8z>": "󰮢󰜐",
+      "class<.*Cryptomator.*>": "󰈡",
+      "class<Spiritfarer.*>": " "
     }
   },
 

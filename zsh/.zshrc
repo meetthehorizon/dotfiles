@@ -17,6 +17,9 @@ antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
 
 # starship prompt init
 eval "$(starship init zsh)"
+# starship prompt
+# antidote bundle spaceship-prompt/spaceship-prompt
+
 cat ~/.cache/wal/sequences &
 . "$HOME/.cargo/env"
 
@@ -27,6 +30,7 @@ export PATH="$HOME/.local/bin:$PATH"
 alias vim="nvim"
 alias clear="clear;fastfetch;"
 alias vizsh="vim ~/.zshrc;source ~/.zshrc"
+alias za="zathura"
 
 # commands to run on shell init
 clear
