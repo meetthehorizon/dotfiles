@@ -17,9 +17,6 @@ declare -A SYNC_PATHS=(
     ["$HOME/Pictures"]="onedrive:Pictures"
     ["$HOME/Documents/Cryptomator"]="onedrive:Documents/Cryptomator"
     ["$HOME/.local/share/fonts"]="onedrive:Fonts"
-    ["$HOME/Backup"]="onedrive:LinuxBackup"
-    # ["$HOME/Documents/Manga"]="onedrive:Documents/Manga"
-    ["$HOME/Documents/Novels"]="onedrive:Documents/Novels"
 )
 
 # Sync function

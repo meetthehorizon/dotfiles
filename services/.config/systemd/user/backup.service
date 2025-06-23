@@ -1,6 +1,0 @@
-[Unit]
-Description=Backup Arch Linux
-
-[Service]
-Type=oneshot
-ExecStart=%h/Scripts/backup.sh

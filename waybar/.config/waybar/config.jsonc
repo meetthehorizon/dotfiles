@@ -40,7 +40,8 @@
       "title<bluetuith>": "󰂱",
       "class<Graveyard.*8z>": "󰮢󰜐",
       "class<.*Cryptomator.*>": "󰈡",
-      "class<Spiritfarer.*>": " "
+      "class<Spiritfarer.*>": " ",
+      "class<org.gnome.seahorse.Application>":""
     }
   },
 
