@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Graveyard Keeper
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/599140
+Icon=steam_icon_599140
+Terminal=false
+Type=Application
+Categories=Game;

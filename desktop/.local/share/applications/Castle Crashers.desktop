@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Castle Crashers
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/204360
+Icon=steam_icon_204360
+Terminal=false
+Type=Application
+Categories=Game;

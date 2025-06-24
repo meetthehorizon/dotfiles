@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Spiritfarer®: Farewell Edition
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/972660
+Icon=steam_icon_972660
+Terminal=false
+Type=Application
+Categories=Game;
