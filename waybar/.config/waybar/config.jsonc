@@ -41,7 +41,8 @@
       "class<Graveyard.*8z>": "󰮢󰜐",
       "class<.*Cryptomator.*>": "󰈡",
       "class<Spiritfarer.*>": " ",
-      "class<org.gnome.seahorse.Application>":""
+      "class<heroic>": "󱢾",
+      "class<org.gnome.seahorse.Application>": ""
     }
   },
 

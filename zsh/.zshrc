@@ -11,6 +11,9 @@ compinit
 # End of lines added by compinstall
 setopt AUTO_CD
 
+# cuda setup
+source /etc/profile
+
 # antidote setup
 source /usr/share/zsh-antidote/antidote.zsh
 antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt

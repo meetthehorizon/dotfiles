@@ -1,21 +1,47 @@
 #!/usr/bin/env bash
 
-# Pick a random wallpaper
-WALL=$(find ~/Pictures/Wallpapers -type f | shuf -n 1)
+# --- Mode handling ---
+MODE="$1"
 
-# Symlink it to ~/.cache/wallpaper
+if [[ "$MODE" == "0" ]]; then
+    WALL_DIR="$HOME/Pictures/Wallpapers"
+elif [[ "$MODE" == "1" ]]; then
+    WALL_DIR="$HOME/Pictures/Wallpapers GIF"
+else
+    echo "Usage: $0 <mode>"
+    echo "  mode 0 = static wallpapers"
+    echo "  mode 1 = GIF wallpapers"
+    exit 1
+fi
+
+# --- Check directory ---
+if [[ ! -d "$WALL_DIR" ]]; then
+    echo "❌ Error: Directory '$WALL_DIR' does not exist."
+    exit 1
+fi
+
+# --- Get current wallpaper (resolved symlink) ---
+CURRENT="$(readlink -f "$HOME/.cache/wallpaper")"
+
+# --- Pick a new random wallpaper (not the current one) ---
+while true; do
+    WALL=$(find "$WALL_DIR" -type f | shuf -n 1)
+    if [[ "$(readlink -f "$WALL")" != "$CURRENT" ]]; then
+        break
+    fi
+done
+
+# --- Create symlink to ~/.cache/wallpaper ---
 CACHE_LINK="$HOME/.cache/wallpaper"
 ln -sf "$WALL" "$CACHE_LINK"
 
-# Generate a Pywal color scheme from the symlink
+# --- Generate Pywal colors ---
 wal -i "$WALL"
 
-# Set the wallpaper with transition using the symlink
+# --- Set wallpaper using swww ---
 swww img "$WALL" --transition-type center --transition-duration 1 --transition-fps 144
 
-# Reload the eww daemon to apply changes
+# --- Reload eww and Waybar ---
 eww reload
-
-# Restart Waybar via toggle (off-on)
 ~/.config/waybar/toggle.sh
 ~/.config/waybar/toggle.sh
