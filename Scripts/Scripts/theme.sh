@@ -21,7 +21,11 @@ if [[ ! -d "$WALL_DIR" ]]; then
 fi
 
 # --- Get current wallpaper (resolved symlink) ---
-CURRENT="$(readlink -f "$HOME/.cache/wallpaper")"
+if [[ "$MODE" == "0" ]]; then
+    CURRENT="$(readlink -f "$HOME/.cache/wallpaper")"
+else
+    CURRENT="$(readlink -f "$HOME/.cache/wallpaper.gif")"
+fi
 
 # --- Pick a new random wallpaper (not the current one) ---
 while true; do
@@ -32,8 +36,7 @@ while true; do
 done
 
 # --- Create symlink to ~/.cache/wallpaper ---
-CACHE_LINK="$HOME/.cache/wallpaper"
-ln -sf "$WALL" "$CACHE_LINK"
+ln -sf "$WALL" "$CURRENT"
 
 # --- Generate Pywal colors ---
 wal -i "$WALL"

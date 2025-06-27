@@ -35,9 +35,6 @@ alias clear="clear;fastfetch;"
 alias vizsh="vim ~/.zshrc;source ~/.zshrc"
 alias za="zathura"
 
-# commands to run on shell init
-clear
-
 # yazi change cwd when exit
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -49,4 +46,7 @@ function y() {
 
 # environment variables
 export PATH=$PATH:/home/conart/.spicetify
+
+# commands to run on shell init
+clear
 
