@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Sekiro™: Shadows Die Twice
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/814380
-Icon=steam_icon_814380
-Terminal=false
-Type=Application
-Categories=Game;

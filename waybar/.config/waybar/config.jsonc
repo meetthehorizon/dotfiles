@@ -36,13 +36,10 @@
       "class<zen>": "",
       "zathura": "󱔗",
       "class<discord>": "󰙯",
-      "Lutris": "󰊗",
       "title<bluetuith>": "󰂱",
-      "class<Graveyard.*8z>": "󰮢󰜐",
       "class<.*Cryptomator.*>": "󰈡",
-      "class<Spiritfarer.*>": " ",
-      "class<heroic>": "󱢾",
-      "class<org.gnome.seahorse.Application>": ""
+      "class<org.gnome.seahorse.Application>": "",
+      "class<Godot.*>": ""
     }
   },
 

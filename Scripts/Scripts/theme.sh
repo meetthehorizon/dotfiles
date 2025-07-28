@@ -1,50 +1,34 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-# --- Mode handling ---
-MODE="$1"
+# Directories
+STATIC_DIR="$HOME/Pictures/Wallpapers"
+GIF_DIR="$HOME/Pictures/Wallpapers(GIF)"
+CACHE_WALL="$HOME/.cache/wallpaper"
 
-if [[ "$MODE" == "0" ]]; then
-    WALL_DIR="$HOME/Pictures/Wallpapers"
-elif [[ "$MODE" == "1" ]]; then
-    WALL_DIR="$HOME/Pictures/Wallpapers GIF"
+# Select mode
+if [ "$1" == "0" ]; then
+    DIR="$STATIC_DIR"
+elif [ "$1" == "1" ]; then
+    DIR="$GIF_DIR"
 else
-    echo "Usage: $0 <mode>"
-    echo "  mode 0 = static wallpapers"
-    echo "  mode 1 = GIF wallpapers"
+    echo "Usage: $0 [0 for static wallpapers | 1 for GIF wallpapers]"
     exit 1
 fi
 
-# --- Check directory ---
-if [[ ! -d "$WALL_DIR" ]]; then
-    echo "❌ Error: Directory '$WALL_DIR' does not exist."
-    exit 1
-fi
+# Pick random wallpaper
+WALL=$(find "$DIR" -type f | shuf -n 1)
 
-# --- Get current wallpaper (resolved symlink) ---
-if [[ "$MODE" == "0" ]]; then
-    CURRENT="$(readlink -f "$HOME/.cache/wallpaper")"
-else
-    CURRENT="$(readlink -f "$HOME/.cache/wallpaper.gif")"
-fi
-
-# --- Pick a new random wallpaper (not the current one) ---
-while true; do
-    WALL=$(find "$WALL_DIR" -type f | shuf -n 1)
-    if [[ "$(readlink -f "$WALL")" != "$CURRENT" ]]; then
-        break
-    fi
-done
-
-# --- Create symlink to ~/.cache/wallpaper ---
-ln -sf "$WALL" "$CURRENT"
-
-# --- Generate Pywal colors ---
+# Generate colors using wal
 wal -i "$WALL"
 
-# --- Set wallpaper using swww ---
+# Set wallpaper using swww
 swww img "$WALL" --transition-type center --transition-duration 1 --transition-fps 144
 
-# --- Reload eww and Waybar ---
-eww reload
+# If static, link to .cache/wallpaper
+if [ "$1" == "0" ]; then
+    ln -sf "$WALL" "$CACHE_WALL"
+fi
+
+# Reload waybar
 ~/.config/waybar/toggle.sh
 ~/.config/waybar/toggle.sh

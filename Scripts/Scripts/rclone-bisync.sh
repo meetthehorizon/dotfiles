@@ -23,9 +23,9 @@ declare -A SYNC_PATHS=(
 sync_path() {
     local src="$1"
     local dest="$2"
-
+    
     echo "$(timestamp) Syncing: $src <-> $dest"
-    rclone bisync "$src" "$dest" --resync --verbose --log-file="$RCLONE_LOG"
+    rclone bisync "$src" "$dest" --verbose --log-file="$RCLONE_LOG"
 }
 
 # Main loop
