@@ -20,6 +20,8 @@ antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
 
 # starship prompt init
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+
 # starship prompt
 # antidote bundle spaceship-prompt/spaceship-prompt
 
@@ -31,7 +33,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # aliases
 alias vim="nvim"
-alias clear="clear;fastfetch;"
+alias clr="clear;fastfetch;"
 alias vizsh="vim ~/.zshrc;source ~/.zshrc"
 alias za="zathura"
 
@@ -48,5 +50,5 @@ function y() {
 export PATH=$PATH:/home/conart/.spicetify
 
 # commands to run on shell init
-clear
+clr
 
