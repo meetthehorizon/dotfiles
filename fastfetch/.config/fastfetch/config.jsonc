@@ -1,7 +1,7 @@
 {
   "logo": {
     "type": "file",
-    "source": "$HOME/.config/fastfetch/ascii_presets/undertale_dog.txt",
+    "source": "$HOME/.config/fastfetch/ascii_presets/retroarch.txt",
     "color": {
       "1": "white"
     }
@@ -29,10 +29,6 @@
       "format": "{pretty-name}"
     },
     "wm",
-    {
-      "type": "host",
-      "format": "{name}"
-    },
     "kernel",
     "uptime",
     "shell",
