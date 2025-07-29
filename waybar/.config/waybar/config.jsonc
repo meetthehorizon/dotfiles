@@ -39,7 +39,8 @@
       "title<bluetuith>": "󰂱",
       "class<.*Cryptomator.*>": "󰈡",
       "class<org.gnome.seahorse.Application>": "",
-      "class<Godot.*>": ""
+      "class<Godot.*>": "",
+      "class<anki>": "󰘸"
     }
   },
 
