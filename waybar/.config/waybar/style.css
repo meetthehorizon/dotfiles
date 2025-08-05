@@ -1,19 +1,19 @@
 @import url("file:///home/conart/.cache/wal/colors-waybar.css");
 
 * {
-    border: none;
-    border-radius: 8px;
-    font-family: "SpaceMono Nerd Font", Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    min-height: 0;
+  border: none;
+  border-radius: 5px;
+  font-family: "SpaceMono Nerd Font", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  min-height: 0;
 }
 
 window#waybar {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 tooltip {
-  background: @background;;
+  background: @background;
   border: 1px solid @color8;
   border-bottom: 3px solid @color8;
 }
@@ -22,44 +22,55 @@ tooltip label {
   color: @foreground;
 }
 
-.modules-left, .modules-center, .modules-right {
-    background: alpha(@background, 0.3);
+.modules-left,
+.modules-center,
+.modules-right {
+  background: alpha(@background, 0.3);
 }
 
 /* general configuration to be passed to every module */
-#window, #clock, #network, #wireplumber, 
-#battery, #backlight, #workspaces button,
+#window,
+#clock,
+#network,
+#wireplumber,
+#battery,
+#backlight,
+#workspaces button,
 #custom-fan {
-    padding: 5px;
-    background: alpha(@background, 0.5);
-    color: @foreground;
-    border-bottom: 2px solid @color8;
-    margin: 2px
+  padding: 5px;
+  background: alpha(@background, 0.5);
+  color: @foreground;
+  border-bottom: 2px solid @color8;
+  margin: 2px;
 }
 
 /* active things in the bar */
 #window,
 #battery.charging,
 #workspaces button.active {
-    background: @background;
-    color: @foreground;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+  background: @background;
+  color: @foreground;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 /* urgent things in the bar */
 #workspaces button.urgent {
-    background: @background;
-    color: @foreground;
-    border-top: 2px solid @color3;
-    border-bottom: 2px solid @color3;
+  background: @background;
+  color: @foreground;
+  border-top: 2px solid @color3;
+  border-bottom: 2px solid @color3;
 }
 
 /* things you should proably take a look at */
-#battery.bat_0, #battery.bat_10, #battery.bat_20, 
-#network.disabled, #network.disconnected, #wireplumber.muted {
-    background: @background;
-    color: @foreground;
-    border-top: 2px solid @color1;
-    border-bottom: 2px solid @color1;
+#battery.bat_0,
+#battery.bat_10,
+#battery.bat_20,
+#network.disabled,
+#network.disconnected,
+#wireplumber.muted {
+  background: @background;
+  color: @foreground;
+  border-top: 2px solid @color1;
+  border-bottom: 2px solid @color1;
 }
