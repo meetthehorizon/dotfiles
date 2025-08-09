@@ -40,7 +40,8 @@
       "class<.*Cryptomator.*>": "󰈡",
       "class<org.gnome.seahorse.Application>": "",
       "class<Godot.*>": "",
-      "class<anki>": "󰘸"
+      "class<anki>": "󰘸",
+      "class<com.obsproject.Studio>": "󰕧"
     }
   },
 
