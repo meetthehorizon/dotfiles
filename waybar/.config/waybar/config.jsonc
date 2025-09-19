@@ -1,0 +1,144 @@
+{
+  // bar configuration
+  "layer": "top",
+  "margin": "4 4 5 4",
+  // "spacing": 5,
+  "name": "waybar-top",
+  "reload_style_on_change": true,
+
+  // modules
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["backlight", "wireplumber", "battery", "network", "clock"],
+
+  "hyprland/workspaces": {
+    "format": "{icon} {windows}",
+    "window-rewrite-default": "",
+    "format-window-separator": " |",
+    "window-rewrite": {
+      "code": "󰨞",
+      "kitty": "",
+      "class<org.wezfurlong.wezterm>": "",
+      "class<org.wezfurlong.wezterm> title<Yazi.*>": "󰉓",
+      "class<org.wezfurlong.wezterm> title<gdu>": "",
+      "class<org.wezfurlong.wezterm> title<nmtui>": "󰛳",
+      "obsidian": "󰠮",
+      "rofi": "",
+      "spotify": "󰓇",
+      "steam": "󰓓",
+      "class<firefox>": "",
+      "zathura": "󱔗",
+      "class<discord>": "󰙯",
+      "title<bluetuith>": "󰂱",
+      "class<.*Cryptomator.*>": "󰈡",
+      "class<org.gnome.seahorse.Application>": "",
+      "class<Godot.*>": "",
+      "class<anki>": "󰘸",
+      "class<com.obsproject.Studio>": "󰕧"
+    },
+    "swap-icon-label": true
+  },
+
+  "hyprland/window": {
+    "format": "{title}",
+    "rewrite": {
+      "(.*) - (.*) - Obsidian (.*)": "$1 ($2)",
+      "Spotify Premium": "Spotify",
+      "(.*)- Visual Studio Code": "VS Code",
+      "(.*) — Zen Browser": "Zen",
+      "(.*) - fish": "> [$1]",
+      "(.*).(.*).zathura": "Zathura"
+    },
+    "separate-outputs": true,
+    "swap-icon-label": false
+  },
+
+  // module configuration
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "{signalStrength}% {icon}",
+    "format-ethernet": "{ipaddr}/{cidr}  ",
+    "format-disconnected": "󰤭 ",
+    "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+    "tooltip-format-wifi": "{essid}",
+    "tooltip-format-ethernet": "{ifname}  ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+  },
+
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " ",
+      " ",
+      " ",
+      " ",
+      " ",
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ]
+  },
+
+  "wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-muted": "󰝟",
+    "format-icons": ["󰕿", "󰖀", "󰕾"]
+  },
+
+  "battery": {
+    "interval": 1,
+    "states": {
+      "bat_100": 100,
+      "bat_90": 90,
+      "bat_80": 80,
+      "bat_70": 70,
+      "bat_60": 60,
+      "bat_50": 50,
+      "bat_40": 40,
+      "bat_30": 30,
+      "bat_20": 20,
+      "bat_10": 10,
+      "bat_0": 0
+    },
+    "format-charging": "{capacity}% 󰂄",
+    "format-bat_100": "{capacity}% 󰁹",
+    "format-bat_90": "{capacity}% 󰂂",
+    "format-bat_80": "{capacity}% 󰂁",
+    "format-bat_70": "{capacity}% 󰂀",
+    "format-bat_60": "{capacity}% 󰁿",
+    "format-bat_50": "{capacity}% 󰁾",
+    "format-bat_40": "{capacity}% 󰁽",
+    "format-bat_30": "{capacity}% 󰁼",
+    "format-bat_20": "{capacity}% 󰁻",
+    "format-bat_10": "{capacity}% 󰁺",
+    "format-bat_0": "{capacity}% 󰂃",
+
+    "tooltip": true,
+    "tooltip-format": "{power}W",
+    "max-length": 25
+  },
+
+  "clock": {
+    "format": "{:%H:%M [%Z] }",
+    "tooltip-format": "{:%Y-%m-%d}",
+
+    "timezones": [
+      "Asia/Kolkata",
+      "Asia/Tokyo",
+      "America/New_York",
+      "America/Los_Angeles",
+      "Europe/London",
+      "Europe/Berlin",
+      "Asia/Singapore",
+      "Australia/Sydney"
+    ]
+  }
+}
