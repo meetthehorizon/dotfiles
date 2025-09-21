@@ -31,6 +31,7 @@ if status is-interactive
     alias viz 'vim ~/.config/fish/config.fish'
     alias vin 'vim ~/.config/nvim/init.lua'
     alias clr 'clear; fastfetch'
+    alias code 'code --reuse-window'
     
     zoxide init fish | source
     if test "$TERM_PROGRAM" != "vscode"
