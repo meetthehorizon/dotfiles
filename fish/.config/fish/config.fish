@@ -33,5 +33,7 @@ if status is-interactive
     alias clr 'clear; fastfetch'
     
     zoxide init fish | source
-    clr
+    if test "$TERM_PROGRAM" != "vscode"
+        clr
+    end
 end
