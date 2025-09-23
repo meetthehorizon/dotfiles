@@ -14,7 +14,7 @@
   "hyprland/workspaces": {
     "format": "{icon} {windows}",
     "window-rewrite-default": "",
-    "format-window-separator": " |",
+    "format-window-separator": " ",
     "window-rewrite": {
       "code": "󰨞",
       "kitty": "",
