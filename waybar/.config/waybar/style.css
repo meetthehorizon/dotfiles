@@ -40,15 +40,6 @@ tooltip {
   margin: 2px;
 }
 
-#battery.charging,
-#workspaces button.active {
-  border-bottom: 2px solid white;
-}
-
-#workspaces button.urgent {
-  border-bottom: 2px solid #f38ba8;
-}
-
 #battery.bat_0,
 #battery.bat_10,
 #battery.bat_20,
@@ -62,4 +53,13 @@ tooltip {
 #battery.bat_50,
 #battery.bat_40 {
   border-bottom: 2px solid #f9e2af;
+}
+
+#workspaces button.urgent {
+  border-bottom: 2px solid #f38ba8;
+}
+
+#battery.charging,
+#workspaces button.active {
+  border-bottom: 2px solid white;
 }
