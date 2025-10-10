@@ -27,6 +27,7 @@
       "spotify": "󰓇",
       "steam": "󰓓",
       "class<firefox>": "",
+      "class<firefox> title<.*Bitwarden.*>": "",
       "zathura": "󱔗",
       "class<discord>": "󰙯",
       "title<bluetuith>": "󰂱",
