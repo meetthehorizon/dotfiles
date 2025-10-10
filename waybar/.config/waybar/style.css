@@ -25,6 +25,7 @@ tooltip {
 }
 
 #window,
+#bluetooth,
 #clock,
 #network,
 #wireplumber,
@@ -44,11 +45,16 @@ tooltip {
 #battery.bat_10,
 #battery.bat_20,
 #network.disabled,
+#bluetooth.disabled,
+#bluetooth.no-controller,
+#bluetooth.off,
 #network.disconnected,
 #wireplumber.muted {
   border-bottom: 2px solid #f38ba8;
 }
 
+#bluetooth.discovering,
+#bluetooth.discoverable,
 #battery.bat_30,
 #battery.bat_50,
 #battery.bat_40 {
@@ -60,6 +66,7 @@ tooltip {
 }
 
 #battery.charging,
+#bluetooth.disabled,
 #workspaces button.active {
   border-bottom: 2px solid white;
 }
