@@ -18,6 +18,7 @@ set -Ux EDITOR nvim
 set -Ux BROWSER firefox
 set -Ux VISUAL nvim
 set -U fish_user_paths $HOME/.local/bin $fish_user_paths
+set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
 
 # ssh agent
 if not set -q SSH_AUTH_SOCK
