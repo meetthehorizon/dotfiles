@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Directories
-STATIC_DIR="$HOME/pic/wallpapers-pc"
-GIF_DIR="$HOME/pic/wallpapers-pc-gif"
+STATIC_DIR="$HOME/Pictures/wallpapers-pc"
+GIF_DIR="$HOME/Pictures/wallpapers-pc-gif"
 CACHE_WALL="$HOME/.cache/wallpaper"
 
 # Select mode
 if [ "$1" == "0" ]; then
     DIR="$STATIC_DIR"
-elif [ "$1" == "1" ]; then
+    elif [ "$1" == "1" ]; then
     DIR="$GIF_DIR"
 else
     echo "Usage: $0 [0 for static wallpapers | 1 for GIF wallpapers]"
