@@ -1,0 +1,13 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Kshitij Sharma
+	email = kshitijs1202@gmail.com
+# Please adapt and uncomment the following lines:
+#	name = Kshitij Sharma
+#	email = conart@asus-zephy-g14.(none)
+[alias]
+	st = status
+	lg = log -n 10 --oneline
+	rb = rebase
+	rbc = rebase --continue
+	ci = commit
