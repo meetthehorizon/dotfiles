@@ -11,3 +11,5 @@
 	rb = rebase
 	rbc = rebase --continue
 	ci = commit
+[url "git@github.com:"]
+	insteadOf = https://github.com/
