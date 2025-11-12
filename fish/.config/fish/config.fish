@@ -30,10 +30,8 @@ if status is-interactive
     # alias
     alias vim nvim
     alias viz 'vim ~/.config/fish/config.fish'
-    alias vin 'vim ~/.config/nvim/init.lua'
     alias clr 'clear; fastfetch'
-    alias code 'code --reuse-window'
-    alias time-btrfs 'xhost +SI:localuser:root && sudo DISPLAY=:1 timeshift-launcher'
+    alias evim 'NVIM_APPNAME=nvim-exp nvim'
     
     zoxide init fish | source
     if test "$TERM_PROGRAM" != "vscode"
