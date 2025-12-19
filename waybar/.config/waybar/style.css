@@ -10,25 +10,23 @@
 /* =============================================================================
    2. WINDOW CONFIGURATION
    ============================================================================= */
-/* Main bar container */
 window#waybar {
-  background: rgba(0, 0, 0, 0.4);  
+  background: #1e1e2e;
+  padding: 2px 4px;
 }
 
 /* =============================================================================
    3. MODULE LAYOUT
    ============================================================================= */
-/* Spacing for module groups (left, center, right) */
 .modules-left,
 .modules-center,
 .modules-right {
-  padding: 4px;
+  padding: 2px;
 }
 
 /* =============================================================================
    4. MODULE STYLES
    ============================================================================= */
-/* Common styles for most modules and the workspaces button */
 #window,
 #bluetooth,
 #clock,
@@ -41,25 +39,18 @@ window#waybar {
 #user,
 #mpris,
 #power-profiles-daemon,
-#tray
-{
-  padding: 6px 8px;
-  color: white;
+#tray {
+  padding: 4px 8px;
+  color: #cdd6f4;
   margin: 2px;
   border-radius: 5px;
-  
-  /* Frosted glass effect components */
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.06), /* Inner highlight */
-    0 6px 20px rgba(0, 0, 0, 0.25);          /* Drop shadow */
-
-  background: transparent;
+  border: 1px solid #45475a;
+  background: #313244;
   transition: all 120ms ease-out;
 }
 
 #image {
-  margin: 2px
+  margin: 2px;
 }
 
 /* =============================================================================
@@ -75,7 +66,7 @@ window#waybar {
 #power-profiles-daemon:hover,
 #mpris:hover,
 #user:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #45475a;
 }
 
 /* =============================================================================
@@ -85,12 +76,9 @@ tooltip {
   padding: 6px 10px;
   margin: 3px;
   border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.06),
-    0 6px 20px rgba(0, 0, 0, 0.25);
-
-  background: rgb(0, 0, 0);
+  border: 1px solid #585b70;
+  background: #1e1e2e;
+  color: #cdd6f4;
 }
 
 /* =============================================================================
@@ -98,24 +86,21 @@ tooltip {
    ============================================================================= */
 
 /* --- Success / Good State (Green) --- */
-/* Charging battery or Power Saver profile */
 #battery.charging,
 #power-profiles-daemon.power-saver {
-  border-color: rgba(166, 227, 161, 0.7);
-  color: rgba(166, 227, 161, 0.7);
+  border-color: #a6e3a1;
+  color: #a6e3a1;
 }
 
 /* --- Active / Focus State (Teal) --- */
-/* Active window or workspace, playing media */
 #window.active,
 #workspaces button.active,
 #mpris {
-  border-color: rgba(148, 226, 213, 0.7); 
-  color: rgba(148, 226, 213, 0.7); 
+  border-color: #94e2d5;
+  color: #94e2d5;
 }
 
 /* --- Warning / Progress State (Yellow) --- */
-/* Battery 30-50%, Bluetooth discovering, Paused media, Balanced profile */
 #battery.bat_30,
 #battery.bat_40,
 #battery.bat_50,
@@ -123,12 +108,11 @@ tooltip {
 #bluetooth.discoverable,
 #mpris.paused,
 #power-profiles-daemon.balanced {
-  border-color: rgba(249, 226, 175, 0.7);
-  color: rgba(249, 226, 175, 0.7);
+  border-color: #f9e2af;
+  color: #f9e2af;
 }
 
 /* --- Critical / Urgent State (Red) --- */
-/* Low battery, network/bt issues, muted audio, urgent workspace, performance profile */
 #battery.bat_0,
 #battery.bat_10,
 #battery.bat_20,
@@ -138,8 +122,8 @@ tooltip {
 #bluetooth.no-controller,
 #bluetooth.off,
 #wireplumber.muted,
-#workspaces button.urgent ,
+#workspaces button.urgent,
 #power-profiles-daemon.performance {
-  border-color: rgba(243, 139, 168, 0.7);
-  color: rgba(243, 139, 168, 0.7);
-} 
+  border-color: #f38ba8;
+  color: #f38ba8;
+}

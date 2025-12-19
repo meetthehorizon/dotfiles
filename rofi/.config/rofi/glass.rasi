@@ -11,30 +11,26 @@ configuration {
 }
 
 * {
-    /* Fonts matched to Waybar: "IBM Plex Sans JP", "Symbols Nerd Font", "IBM Plex Sans" */
-    /* ALWAYS specify a size (e.g., 12) to prevent sizing glitches */
     font: "IBM Plex Sans 13";
 
-    /* Colors derived from Waybar style.css */
-    bg-col:  rgba(0, 0, 0, 0.4);   /* window#waybar background */
-    bg-col-light: rgba(255, 255, 255, 0.1); /* :hover background */
-    border-col: rgba(255, 255, 255, 0.2); /* Module borders */
-    selected-col: rgba(255, 255, 255, 0.1); /* Using hover bg for selection base */
-    active-col: rgba(148, 226, 213, 0.7); /* #window.active border color (Teal) */
-    urgent-col: rgba(243, 139, 168, 0.7); /* #window.urgent border color (Red) */
-    fg-col: #ffffff; /* Common text color */
-    fg-col2: #ffffff;
+    /* Catppuccin Mocha Colors */
+    bg-col:       #1e1e2e;  /* Base */
+    bg-col-light: #313244;  /* Surface0 */
+    border-col:   #45475a;  /* Surface1 */
+    selected-col: #45475a;  /* Surface1 */
+    active-col:   #94e2d5;  /* Teal */
+    urgent-col:   #f38ba8;  /* Red */
+    fg-col:       #cdd6f4;  /* Text */
+    fg-col2:      #cdd6f4;  /* Text */
 
     width: 600;
-    
-    /* CRITICAL FIX: Apply the text color globally */
     text-color: @fg-col;
     background-color: transparent;
 }
 
-element-text, element-icon , mode-switcher {
+element-text, element-icon, mode-switcher {
     background-color: transparent;
-    text-color:       inherit;
+    text-color: inherit;
 }
 
 element-text {
@@ -43,39 +39,37 @@ element-text {
 
 window {
     height: 600px;
-    bord: 1px; /* Waybar module border style */
-    border-color: @active-col;
-    border-radius: 5px; /* Waybar border-radius */
     border: 2px;
+    border-color: @active-col;
+    border-radius: 5px;
     background-color: @bg-col;
-    transparency: "real";
 }
 
 inputbar {
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     background-color: @bg-col-light;
 }
 
 prompt {
     background-color: @bg-col-light;
     border-radius: 5px;
-    border-color:  @border-col;
+    border-color: @border-col;
     border: 1px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
     margin: 15px 5px 15px 15px;
 }
 
 entry {
     margin: 15px 15px 15px 5px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
     background-color: @bg-col-light;
     border-radius: 5px;
-    border-color:  @border-col;
+    border-color: @border-col;
     border: 1px;
 }
 
 listview {
-    border: 0px 0px 0px;
+    border: 0px;
     padding: 6px 0px 0px;
     margin: 10px 20px 0px 20px;
     columns: 2;
@@ -84,11 +78,11 @@ listview {
 }
 
 element {
-    padding: 6px 8px; /* Waybar module padding */
+    padding: 6px 8px;
     background-color: transparent;
     text-color: @fg-col;
     border-radius: 5px;
-    margin: 2px; /* Waybar module margin */
+    margin: 2px;
 }
 
 element-icon {
@@ -97,7 +91,7 @@ element-icon {
 }
 
 element selected {
-    background-color: @bg-col-light; /* Hover state from Waybar */
+    background-color: @bg-col-light;
     text-color: @fg-col2;
 }
 
@@ -109,13 +103,13 @@ button {
     padding: 10px;
     background-color: @bg-col-light;
     text-color: @fg-col;
-    vertical-align: 0.5; 
+    vertical-align: 0.5;
     horizontal-align: 0.5;
 }
 
 button selected {
-  background-color: @bg-col;
-  text-color: @active-col;
+    background-color: @bg-col;
+    text-color: @active-col;
 }
 
 message {
