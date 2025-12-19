@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Go Disk Usage
+Comment=Fast disk usage analyzer (TUI)
+Exec=wezterm start gdu
+Icon=drive-harddisk
+Terminal=false
+Type=Application
+Categories=System;Utility;Filesystem;
+Keywords=disk;usage;storage;space;analyzer;cleanup;files;folders;

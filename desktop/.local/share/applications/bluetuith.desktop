@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Bluetuith
+Comment=Manage Bluetooth devices with a TUI
+Exec=wezterm start bluetuith
+Icon=bluetooth-active
+Terminal=false
+Type=Application
+Categories=System;Settings;HardwareSettings;
+Keywords=bluetooth;wireless;pairing;devices;audio;headphones;

@@ -1,0 +1,16 @@
+# Fish shell gitignore
+
+# Universal variables file (machine-specific, auto-generated)
+.config/fish/fish_variables
+
+# Fish daemon files
+.config/fish/fishd.*
+
+# Auto-generated completions (except fisher.fish if you want to keep plugin completions)
+# .config/fish/completions/
+
+# Fish history
+.config/fish/fish_history
+
+# Local config that shouldn't be shared
+.config/fish/config.local.fish

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Network Manager
+Comment=Control NetworkManager with a text user interface
+Exec=wezterm start nmtui
+Icon=network-wireless
+Terminal=false
+Type=Application
+Categories=System;Network;Settings;
+Keywords=network;wifi;wireless;ethernet;connection;internet;lan;wlan;
