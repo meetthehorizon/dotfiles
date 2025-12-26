@@ -1,0 +1,32 @@
+# Enabled systemd services for reproducibility
+# Enable with: sudo systemctl enable <service>
+
+## System Services
+NetworkManager-dispatcher.service
+NetworkManager-wait-online.service
+NetworkManager.service
+ananicy-cpp.service
+bluetooth.service
+docker.service
+getty@.service
+greetd.service
+mariadb.service
+nvidia-hibernate.service
+nvidia-powerd.service
+nvidia-resume.service
+nvidia-suspend.service
+polkit-agent-helper.socket
+power-profiles-daemon.service
+remote-fs.target
+systemd-resolved-monitor.socket
+systemd-resolved-varlink.socket
+systemd-resolved.service
+systemd-userdbd.socket
+warp-svc.service
+
+## User Services (enable with: systemctl --user enable <service>)
+gnome-keyring-daemon.socket
+p11-kit-server.socket
+pipewire-pulse.socket
+pipewire.socket
+wireplumber.service

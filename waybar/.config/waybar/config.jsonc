@@ -31,7 +31,7 @@
 
   "image#logo": { "path": "/home/conart/.face", "size": 25 },
   "user": {
-    "format": "{user}  {work_H}:{work_M}",
+    "format": "󰣇 {work_H}:{work_M}",
     "interval": 60,
     "height": 30,
     "width": 30,
@@ -99,7 +99,8 @@
       "class<antigravity.*>": "󰅴",
       "class<hyprland.*>": "",
       "class<zen.*>": "󰖟",
-      "class<scrcpy.*>": ""
+      "class<scrcpy.*>": "",
+      "class<variety>": "󰸉"
     },
     "swap-icon-label": true
   },
