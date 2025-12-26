@@ -1,27 +1,27 @@
 #!/bin/bash
 
-# Directories
-STATIC_DIR="$HOME/Pictures/wallpapers-pc"
-GIF_DIR="$HOME/Pictures/wallpapers-pc-gif"
 CACHE_WALL="$HOME/.cache/wallpaper"
 
-# Select mode
-if [ "$1" == "0" ]; then
-    DIR="$STATIC_DIR"
-    elif [ "$1" == "1" ]; then
-    DIR="$GIF_DIR"
-else
-    echo "Usage: $0 [0 for static wallpapers | 1 for GIF wallpapers]"
-    exit 1
-fi
+# 1. Tell Variety to go to the next wallpaper
+variety -n
 
-# Pick random wallpaper
-WALL=$(find "$DIR" -type f | shuf -n 1)
+# 2. Short sleep to ensure Variety has finished the file swap
+sleep 0.5
 
-# Set wallpaper using swww
-swww img "$WALL" --transition-type center --transition-duration 1 --transition-fps 120
+# 3. Get the path, stripping out the "Already running" message
+# We use tail -n 1 to grab only the last line (the path)
+WALL=$(variety --current | tail -n 1)
 
-# If static, link to .cache/wallpaper
-if [ "$1" == "0" ]; then
+# 4. Validate and Link
+if [ -f "$WALL" ]; then
+    # Set with your preferred swww settings
+    swww img "$WALL" --transition-type center --transition-duration 1 --transition-fps 120
+
+    # Update your cache symlink
     ln -sf "$WALL" "$CACHE_WALL"
+    
+    echo "Linked $WALL to $CACHE_WALL"
+else
+    echo "Error: Could not find wallpaper file at $WALL"
+    exit 1
 fi
