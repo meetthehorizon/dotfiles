@@ -1,16 +1,16 @@
 # AUR packages (installed via paru)
 # Reinstall with: paru -S --needed - < pkglist-aur.txt
 anki
-antigravity
 bluetuith
 caffeine-ng
+cryptomator-bin
 csvtools-git
 fontpreview
 ghcup-hs-bin
 mawk
-nvidia-laptop-power-cfg
 quickshell-git
 sbctl-dracut-conf
+spacefm
 spotify
-visual-studio-code-bin
+superproductivity
 wlogout-git

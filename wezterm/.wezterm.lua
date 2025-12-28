@@ -21,7 +21,7 @@ return {
 	},
 
 	default_prog = { "/usr/bin/fish", "-l" },
-	font_size = 11.0,
+	font_size = 13.0,
 	window_background_opacity = 0.40,
 	enable_tab_bar = false,
 	window_decorations = "RESIZE",
