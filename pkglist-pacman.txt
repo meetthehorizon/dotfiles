@@ -13,6 +13,8 @@ base
 base-devel
 bash-completion
 bind
+bitwarden
+blueman
 bluez
 bluez-hid2hci
 bluez-libs
@@ -40,6 +42,7 @@ cachyos-wallpapers
 cachyos-zsh-config
 cantarell-fonts
 chwd
+cliphist
 cowsay
 cpupower
 cryptsetup
@@ -132,6 +135,7 @@ nano-syntax-highlighting
 neovim
 netctl
 networkmanager
+network-manager-applet
 networkmanager-openvpn
 nfs-utils
 nilfs-utils

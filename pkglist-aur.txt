@@ -2,6 +2,7 @@
 # Reinstall with: paru -S --needed - < pkglist-aur.txt
 antigravity
 bluetuith-bin
+caffeine
 ghcup-hs-bin
 spotify
 visual-studio-code-bin

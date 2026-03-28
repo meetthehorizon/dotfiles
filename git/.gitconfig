@@ -10,5 +10,6 @@
 	ci = commit
 	co = checkout
 	br = branch
+	fk = -amend --no-edit
 [url "git@github.com:"]
 	insteadOf = https://github.com/
