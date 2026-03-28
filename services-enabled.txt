@@ -2,32 +2,35 @@
 # Enable with: sudo systemctl enable <service>
 
 ## System Services
-NetworkManager-dispatcher.service
-NetworkManager-wait-online.service
-NetworkManager.service
 ananicy-cpp.service
+avahi-daemon.service
+avahi-daemon.socket
 bluetooth.service
+cachyos-iw-set-regdomain.path
+cachyos-rate-mirrors.timer
 docker.service
+fstrim.timer
 getty@.service
-greetd.service
-mariadb.service
-nvidia-hibernate.service
+grub-btrfs-snapper.path
+NetworkManager-dispatcher.service
+NetworkManager.service
+NetworkManager-wait-online.service
 nvidia-powerd.service
-nvidia-resume.service
-nvidia-suspend.service
-polkit-agent-helper.socket
 power-profiles-daemon.service
 remote-fs.target
+snapper-cleanup.timer
+switcheroo-control.service
 systemd-resolved-monitor.socket
-systemd-resolved-varlink.socket
 systemd-resolved.service
+systemd-resolved-varlink.socket
+systemd-timesyncd.service
 systemd-userdbd.socket
-warp-svc.service
+ufw.service
 
 ## User Services (enable with: systemctl --user enable <service>)
 gnome-keyring-daemon.socket
 p11-kit-server.socket
 pipewire-pulse.socket
 pipewire.socket
-speech-dispatcher.socket
 wireplumber.service
+xdg-user-dirs.service
