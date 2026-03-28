@@ -40,4 +40,4 @@ case $NEXT in
 esac
 
 # Set brightness via asusctl
-asusctl -k "$LEVEL"
+asusctl leds set "$LEVEL"
