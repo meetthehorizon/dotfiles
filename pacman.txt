@@ -6,11 +6,9 @@ brightnessctl
 btrfs-progs
 efibootmgr
 fastfetch
-fd
 firefox
 fish
 fuzzel
-fzf
 git
 gnome-keyring
 grub
@@ -34,7 +32,6 @@ sof-firmware
 spotify
 stow
 thunar
-tree-sitter-cli
 unzip
 wireplumber
 zoxide
