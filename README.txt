@@ -30,4 +30,4 @@ Minimal, Productive Arch Linux Setup for Asus Zephyrus G14 GA403
 - [ ] setup: zoxide
 - [ ] setup: aww
 - [ ] setup: kickstarter.nvim
-
+- [x] follow [Asus Arch Guide](https://asus-linux.org/guides/arch-guide/)
