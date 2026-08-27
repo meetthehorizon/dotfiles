@@ -19,15 +19,3 @@ Minimal, Productive Arch Linux Setup for Asus Zephyrus G14 GA403
 | [hyprland](https://hypr.land/)                          | mature wayland window manager          |
 | [stow](https://www.gnu.org/software/stow/)              | managing dotfiles via symlinks only    |
 
-
-## TODO before `v0.1`
-
-- [ ] Hyprland: CAPS should act as ESC
-- [ ] Hyprland: Blur conf
-- [ ] Hyprland: Window Border, Gap conf
-- [ ] fish: add abbrieviations
-- [ ] prompt: decide on starship, or native fish
-- [ ] setup: zoxide
-- [ ] setup: aww
-- [ ] setup: kickstarter.nvim
-- [x] follow [Asus Arch Guide](https://asus-linux.org/guides/arch-guide/)

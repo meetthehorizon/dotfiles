@@ -6,6 +6,7 @@ base-devel
 brightnessctl
 btrfs-progs
 efibootmgr
+eza
 fastfetch
 firefox
 fish
@@ -39,6 +40,7 @@ sbsigntools
 seahorse
 sof-firmware
 spotify
+starship
 stow
 thunar
 unzip
