@@ -1,0 +1,26 @@
+[general]
+import = ["themes/rose-pine.toml"]
+
+[window]
+decorations = "None"
+opacity = 0.8
+blur = true
+
+[font]
+size = 10
+normal = { family = "JetBrainsMono Nerd Font Propo", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font Propo", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font Propo", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font Propo", style = "Bold Italic" }
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Beam" }
+
+[terminal]
+shell = "/usr/bin/fish"
+
+[mouse]
+hide_when_typing = true
