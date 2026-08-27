@@ -1,22 +1,37 @@
-format = "$username$git_branch$git_state$git_status$python$line_break$directory$character"
+format = """
+$sudo\
+$username\
+$hostname\
+$git_branch\
+$git_state\
+$git_status\
+$python\
+$golang\
+$rust\
+$c\
+$cpp\
+$haskell\
+$line_break\
+$directory\
+$character"""
 right_format = "$cmd_duration"
+
+[sudo]
+format = "[$symbol]($style)"
+symbol = "󱑷 "
+disabled = false
 
 [username]
 show_always = true
 style_user = "bold blue"
 style_root = "bold red"
-format = "[󰣇 $user]($style) "
+format = "[$user]($style) "
 
-[directory]
-style = "bold blue"
-format = "[󰉋 $path]($style)[$read_only]($read_only_style) "
-truncation_length = 3
-truncate_to_repo = true
-
-[character]
-success_symbol = "[❯](bold magenta)"
-error_symbol = "[❯](bold red)"
-vimcmd_symbol = "[❮](bold green)"
+[hostname]
+ssh_only = false
+format = '[$ssh_symbol](bold blue)@ [$hostname](bold red) '
+trim_at = '.companyname.com'
+disabled = false
 
 [git_branch]
 disabled = false
@@ -46,9 +61,40 @@ style = "bold bright-black"
 [cmd_duration]
 format = "[󱦟 $duration]($style)"
 style = "bold yellow"
+min_time = 1_000
+show_milliseconds = true
+show_notifications = true
+
+[c]
+format = "[$symbol($version(-$name) )]($style)"
+symbol = "󰙱 "
+
+[cpp]
+format = "[$symbol($version(-$name) )]($style)"
+version_format = "v${major}.{minor}"
+symbol = "󰙲 "
+
+[golang]
+format = "[$symbol($version )]($style)"
+version_format = "v${major}.{minor}"
+symbol = "󰟓 "
+
+[haskell]
+format = "[$symbol($version )]($style)"
+symbol = " "
+style = "bold magenta"
 
 [python]
-format = "via [ $virtualenv]($style) "
-style = "bold green"
-detect_extensions = []
-detect_files = []
+symbol = "󰌠 "
+
+[directory]
+style = "bold blue"
+format = "[󰉋 $path]($style)[$read_only]($read_only_style) "
+truncation_length = 3
+truncate_to_repo = true
+
+[character]
+success_symbol = "[❯](bold magenta)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold green)"
+
