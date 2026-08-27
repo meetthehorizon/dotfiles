@@ -12,9 +12,9 @@ fish
 fuzzel
 git
 gnome-keyring
-grub
 hyprland
 hyprpolkitagent
+inetutils
 less
 linux
 linux-firmware
@@ -33,6 +33,9 @@ power-profiles-daemon
 proton-drive-cli-git
 ripgrep
 rog-control-center
+sbctl
+sbctl-dracut-conf
+sbsigntools
 seahorse
 sof-firmware
 spotify
