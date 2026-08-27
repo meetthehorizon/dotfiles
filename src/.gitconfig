@@ -1,0 +1,7 @@
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[user]
+	name = Kshitij Sharma
+	email = kshitij.dev@proton.me
