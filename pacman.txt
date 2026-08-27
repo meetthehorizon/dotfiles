@@ -16,8 +16,7 @@ gnome-keyring
 grub
 hyprland
 hyprpolkitagent
-impala
-iwd
+less
 linux
 linux-firmware
 neovim
