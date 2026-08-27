@@ -1,0 +1,4 @@
+paru
+paru-debug
+proton-drive-cli-git
+spotify
