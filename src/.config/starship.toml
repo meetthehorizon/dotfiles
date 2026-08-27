@@ -1,0 +1,54 @@
+format = "$username$git_branch$git_state$git_status$python$line_break$directory$character"
+right_format = "$cmd_duration"
+
+[username]
+show_always = true
+style_user = "bold blue"
+style_root = "bold red"
+format = "[󰣇 $user]($style) "
+
+[directory]
+style = "bold blue"
+format = "[󰉋 $path]($style)[$read_only]($read_only_style) "
+truncation_length = 3
+truncate_to_repo = true
+
+[character]
+success_symbol = "[❯](bold magenta)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold green)"
+
+[git_branch]
+disabled = false
+format = "[ $branch]($style) "
+style = "bold bright-black"
+
+[git_status]
+disabled = false
+format = "([$all_status$ahead_behind]($style) )"
+style = "bold red"
+conflicted = "󰞇 "
+ahead = "󰁝 "
+behind = "󰁅 "
+diverged = "󰹺 "
+untracked = "󰋗 "
+stashed = "󰏗 "
+modified = "󰷈 "
+staged = "󰄬 "
+renamed = "󰑕 "
+deleted = "󰍵 "
+
+[git_state]
+disabled = false
+format = '\\([$state( $progress_current/$progress_total)]($style)\\)'
+style = "bold bright-black"
+
+[cmd_duration]
+format = "[󱦟 $duration]($style)"
+style = "bold yellow"
+
+[python]
+format = "via [ $virtualenv]($style) "
+style = "bold green"
+detect_extensions = []
+detect_files = []
