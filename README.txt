@@ -11,12 +11,13 @@ Minimal, Productive Arch Linux Setup for Asus Zephyrus G14 GA403
 
 ## Tools & Applications
 
-| Name                                       | Why                                    |
-|--------------------------------------------|----------------------------------------|
-| [alacritty](https://alacritty.org/)        | minimal terminal, easy configuration   |
-| [fish](https://fishshell.com/)             | OOTB QOL plugins, fast, abbrieviations |
-| [hyprland](https://hypr.land/)             | mature wayland window manager          |
-| [stow](https://www.gnu.org/software/stow/) | managing dotfiles via symlinks only    |
+| Name                                                    | Why                                    |
+|---------------------------------------------------------|----------------------------------------|
+| [alacritty](https://alacritty.org/)                     | minimal terminal, easy configuration   |
+| [fastfetch](https://github.com/fastfetch-cli/fastfetch) | system info at a glance                |
+| [fish](https://fishshell.com/)                          | OOTB QOL plugins, fast, abbrieviations |
+| [hyprland](https://hypr.land/)                          | mature wayland window manager          |
+| [stow](https://www.gnu.org/software/stow/)              | managing dotfiles via symlinks only    |
 
 
 ## TODO before `v0.1`
