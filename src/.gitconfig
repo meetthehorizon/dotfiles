@@ -5,3 +5,13 @@
 [user]
 	name = Kshitij Sharma
 	email = kshitij.dev@proton.me
+	signingkey = B56189C6E895110D
+[pull]
+	rebase = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/bin/gpg
+	format = openpgp
