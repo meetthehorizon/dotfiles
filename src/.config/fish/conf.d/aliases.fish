@@ -1,7 +1,7 @@
 if status is-interactive
     # Aliases
-    alias ls="eza --icons"
-    alias ll="eza -la --icons --group-directories-first"
+    abbr -a ls  "eza --icons always"
+    abbr -a ll  "eza -la --icons always --group-directories-first"
 
     # Abbreviations
     abbr -a v "nvim"
