@@ -1,7 +1,6 @@
 ------------------
 ---- MONITORS ----
 ------------------
-
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
 	output = "eDP-1",
@@ -270,9 +269,9 @@ for i = 1, 10 do
 	hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
 
--- Example special workspace (scratchpad)
-hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("scratch"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:scratch" }))
+-- Special Worksapces
+hl.bind(mainMod .. " + A", hl.dsp.workspace.toggle_special("admin"))
+hl.bind(mainMod .. " + SHIFT + A", hl.dsp.window.move({ workspace = "special:admin" }))
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
