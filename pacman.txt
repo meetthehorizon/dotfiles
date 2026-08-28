@@ -35,6 +35,7 @@ pipewire
 pipewire-audio
 pipewire-jack
 pipewire-pulse
+playerctl
 power-profiles-daemon
 proton-drive-cli-git
 ripgrep
@@ -50,5 +51,6 @@ stow
 thunar
 tree-sitter-cli
 unzip
+uwsm
 wireplumber
 zoxide
