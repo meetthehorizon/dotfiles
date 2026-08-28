@@ -247,6 +247,7 @@ local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("uwsm-app -- " .. terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("uwsm-app -- " .. fileManager))
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("uwsm-app -- " .. menu))
+hl.bind("XF86Launch1", hl.dsp.exec_cmd("rog-control-center"))
 
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(
