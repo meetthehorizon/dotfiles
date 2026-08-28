@@ -4,10 +4,10 @@ Minimal, Productive Arch Linux Setup for Asus Zephyrus G14 GA403
 
 ## Philosophy
 
-- All additions, should have a clear purpose and contribute to productivity.
-- No automatic themeing, fancy animations, or eye candy. Simple, Precise and for Work.
-- Anti AI, Utility should be prioritisation. If a task is repetitive, a script should be used.
-- Least amount of tools. TUI preferred over actual GUIs.
+- All additions should have a clear purpose and contribute to productivity.
+- No fancy themes, animations, or eye candies. Simple, Precise and for Work.
+- Anti AI. Utility should be prioritisation. If a task is repetitive, a script should be used.
+- Least amount of tools. TUI >> GUI.
 
 ## Tools & Applications
 
