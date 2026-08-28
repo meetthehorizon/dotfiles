@@ -368,3 +368,11 @@ hl.layer_rule({
 	blur = true,
 	xray = true,
 })
+
+hl.window_rule({
+	name = "center-float",
+	match = { class = "xdg-desktop-portal-gtk|.*rog-control-center|.*seahorse.*|" },
+	float = true,
+	min_size = { 1000, 800 },
+	max_size = { 1000, 800 },
+})
