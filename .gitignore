@@ -1,1 +1,2 @@
 /src/.config/fish/fish_variables
+/src/.config/systemd/user/graphical-session.target.wants

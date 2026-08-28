@@ -1,6 +1,7 @@
 alacritty
 amd-ucode
 asusctl
+awww
 base
 base-devel
 brightnessctl
@@ -52,5 +53,6 @@ thunar
 tree-sitter-cli
 unzip
 uwsm
+waybar
 wireplumber
 zoxide
