@@ -21,7 +21,7 @@ hl.monitor({
 hl.monitor({
 	output = "HDMI-A-1",
 	mode = "1920x1080@240",
-	position = "auto-center-right",
+	position = "auto-center-left",
 })
 
 ---------------------
@@ -44,10 +44,11 @@ local terminal = "alacritty"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function()
-	hl.exec_cmd(terminal, { worksapce = "1 silent" })
+	hl.exec_cmd(terminal, { workspace = "1 silent" })
 	hl.exec_cmd(browser, { workspace = "2 silent" })
-	hl.exec_cmd(terminal, { workspace = "3 silent" })
-	hl.exec_cmd(spotify, { workspace = "4 silent" })
+
+	hl.exec_cmd(terminal, { workspace = "special:admin" })
+	hl.exec_cmd("spotify", { workspace = "special:admin" })
 end)
 
 -------------------------------
