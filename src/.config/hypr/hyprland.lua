@@ -22,10 +22,10 @@ hl.monitor({
 ---------------------
 
 -- Set programs that you use
-local terminal = "alacritty"
+local browser = "firefox"
 local fileManager = "thunar"
 local menu = "fuzzel"
-
+local terminal = "alacritty"
 
 -------------------
 ---- AUTOSTART ----
@@ -36,7 +36,11 @@ local menu = "fuzzel"
 -- Autostart necessary processes (like notifications daemons, status bars, etc.)
 -- Or execute your favorite apps at launch like this:
 --
-hl.on("hyprland.start", function () 
+hl.on("hyprland.start", function()
+	hl.exec_cmd(terminal, { worksapce = "1 silent" })
+	hl.exec_cmd(browser, { workspace = "2 silent" })
+	hl.exec_cmd(terminal, { workspace = "3 silent" })
+	hl.exec_cmd(spotify, { workspace = "4 silent" })
 end)
 
 
