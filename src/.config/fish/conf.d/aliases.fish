@@ -23,4 +23,6 @@ if status is-interactive
     abbr -a grs "git rebase -i --autosquash --root"
     abbr -a grc "git rebase --continue"
 
+    # CLI Tools
+    abbr -a lg  lazygit
 end
