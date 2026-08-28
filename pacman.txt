@@ -29,6 +29,7 @@ linux-headers
 ly
 neovim
 networkmanager
+noto-fonts
 nvidia-open
 nvidia-settings
 paru
@@ -53,6 +54,8 @@ starship
 stow
 thunar
 tree-sitter-cli
+ttf-hack-nerd
+ttf-jetbrains-mono-nerd
 unzip
 uwsm
 waybar
