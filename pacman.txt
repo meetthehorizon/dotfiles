@@ -12,6 +12,7 @@ firefox
 fish
 fuzzel
 git
+github-cli
 gnome-keyring
 hyprland
 hyprpolkitagent
