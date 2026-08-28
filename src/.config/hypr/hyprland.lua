@@ -80,8 +80,8 @@ end)
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
 	general = {
-		gaps_in = 5,
-		gaps_out = 20,
+		gaps_in = 2,
+		gaps_out = 4,
 
 		border_size = 2,
 
@@ -100,8 +100,8 @@ hl.config({
 	},
 
 	decoration = {
-		rounding = 10,
-		rounding_power = 2,
+		rounding = 4,
+		rounding_power = 5,
 
 		-- Change transparency of focused and unfocused windows
 		active_opacity = 1.0,
@@ -116,9 +116,12 @@ hl.config({
 
 		blur = {
 			enabled = true,
-			size = 3,
-			passes = 1,
-			vibrancy = 0.1696,
+			size = 10,
+			passes = 3,
+			noise = 0.02,
+			contrast = 1.0,
+			brightness = 0.7,
+			xray = true,
 		},
 	},
 
