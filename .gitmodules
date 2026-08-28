@@ -1,0 +1,3 @@
+[submodule "src/.config/nvim"]
+	path = src/.config/nvim
+	url = git@github.com:meetthehorizon/nvim.git
