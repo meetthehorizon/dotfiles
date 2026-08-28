@@ -8,12 +8,21 @@ hl.monitor({
 	mode = "2880x1800@120",
 	position = "0x0",
 	scale = "1.6",
+	bitdepth = 10,
+	cm = "hdr",
 })
 hl.monitor({
 	output = "eDP-2",
 	mode = "2880x1800@120",
 	position = "0x0",
 	scale = "1.6",
+	bitdepth = 10,
+	cm = "hdr",
+})
+hl.monitor({
+	output = "HDMI-A-1",
+	mode = "1920x1080@240",
+	position = "auto-center-right",
 })
 
 ---------------------
