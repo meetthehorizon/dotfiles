@@ -16,6 +16,7 @@ gnome-keyring
 hyprland
 hyprpolkitagent
 inetutils
+keychain
 less
 linux
 linux-firmware
