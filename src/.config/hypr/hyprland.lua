@@ -361,3 +361,10 @@ hl.window_rule({
 	move = "20 monitor_h-120",
 	float = true,
 })
+
+hl.layer_rule({
+	name = "enable-blur",
+	match = { namespace = "waybar-top" },
+	blur = true,
+	xray = true,
+})
