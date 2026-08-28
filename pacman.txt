@@ -26,6 +26,7 @@ less
 linux
 linux-firmware
 linux-headers
+ly
 neovim
 networkmanager
 nvidia-open
@@ -45,6 +46,7 @@ sbctl
 sbctl-dracut-conf
 sbsigntools
 seahorse
+signal-desktop
 sof-firmware
 spotify
 starship
