@@ -309,6 +309,9 @@ hl.bind(
 	{ locked = true, repeating = true }
 )
 
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("pidof slurp || hyprshot -m window -o 'Pictures/Screenshots/'"))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("pidof slurp || hyprshot -m region -o 'Pictures/Screenshots/'"))
+
 -- Requires playerctl
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
@@ -317,6 +320,7 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true 
 
 hl.bind("ALT + N", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("ALT + P", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
+
 hl.bind(
 	"ALT + W",
 	hl.dsp.exec_cmd(

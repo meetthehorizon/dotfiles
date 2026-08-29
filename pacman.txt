@@ -19,6 +19,7 @@ github-cli
 gnome-keyring
 hyprland
 hyprpolkitagent
+hyprshot
 inetutils
 keychain
 lazygit
