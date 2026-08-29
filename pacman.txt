@@ -1,5 +1,6 @@
 alacritty
 amd-ucode
+anki
 asusctl
 awww
 base
@@ -34,6 +35,9 @@ networkmanager
 noto-fonts
 nvidia-open
 nvidia-settings
+obs-studio
+obsidian
+opencode
 paru
 paru-debug
 pipewire
