@@ -25,4 +25,5 @@ if status is-interactive
 
     # CLI Tools
     abbr -a lg  lazygit
+    abbr -a ff  fastfetch
 end
