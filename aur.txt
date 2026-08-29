@@ -1,3 +1,4 @@
+localsend-bin
 paru
 paru-debug
 proton-drive-cli-git

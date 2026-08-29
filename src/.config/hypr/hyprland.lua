@@ -380,7 +380,7 @@ hl.layer_rule({
 
 hl.window_rule({
 	name = "center-float",
-	match = { class = "xdg-desktop-portal-gtk|.*rog-control-center|.*seahorse.*|[tT]hunar" },
+	match = { class = "xdg-desktop-portal-gtk|.*rog-control-center|.*seahorse.*|[tT]hunar|.*localsend.*" },
 	float = true,
 	min_size = { 1000, 800 },
 })
