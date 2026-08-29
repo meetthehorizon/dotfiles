@@ -382,7 +382,6 @@ hl.window_rule({
 	match = { class = "xdg-desktop-portal-gtk|.*rog-control-center|.*seahorse.*|[tT]hunar" },
 	float = true,
 	min_size = { 1000, 800 },
-	max_size = { 1000, 800 },
 })
 
 
