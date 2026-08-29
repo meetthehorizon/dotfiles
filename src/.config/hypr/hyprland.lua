@@ -319,8 +319,14 @@ hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tru
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
 hl.bind("ALT + N", hl.dsp.exec_cmd("playerctl next"), { locked = true })
-hl.bind("ALT + P", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
-hl.bind("ALT + I", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
+hl.bind("ALT + P", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
+hl.bind(
+	"ALT + W",
+	hl.dsp.exec_cmd(
+		"systemctl --user is-active --quiet waybar && systemctl --user stop waybar || systemctl --user start waybar"
+	),
+	{ locked = true }
+)
 
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
