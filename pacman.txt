@@ -63,7 +63,7 @@ shellcheck
 shfmt
 signal-desktop
 sof-firmware
-spotify
+spotify-launcher
 starship
 stow
 stylua
