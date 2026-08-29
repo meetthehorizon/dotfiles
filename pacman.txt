@@ -47,6 +47,8 @@ pipewire-pulse
 playerctl
 power-profiles-daemon
 proton-drive-cli-git
+qt5-wayland
+qt6-wayland
 ripgrep
 rog-control-center
 sbctl
