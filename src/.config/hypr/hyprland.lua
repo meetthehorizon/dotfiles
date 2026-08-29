@@ -46,9 +46,6 @@ local terminal = "alacritty"
 hl.on("hyprland.start", function()
 	hl.exec_cmd(terminal, { workspace = "1 silent" })
 	hl.exec_cmd(browser, { workspace = "2 silent" })
-
-	hl.exec_cmd(terminal, { workspace = "special:admin" })
-	hl.exec_cmd("spotify", { workspace = "special:admin" })
 end)
 
 -------------------------------
