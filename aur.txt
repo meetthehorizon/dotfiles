@@ -3,4 +3,3 @@ paru
 paru-debug
 proton-drive-cli-git
 sbctl-dracut-conf
-spotify

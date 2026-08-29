@@ -6,12 +6,14 @@ awww
 base
 base-devel
 brightnessctl
+btop
 btrfs-progs
 dunst
 efibootmgr
 eza
 fastfetch
 fd
+ffmpegthumbnailer
 firefox
 fish
 fuzzel
@@ -19,6 +21,8 @@ fzf
 git
 github-cli
 gnome-keyring
+gofumpt
+golangci-lint
 hyprland
 hyprpolkitagent
 hyprshot
@@ -26,9 +30,11 @@ inetutils
 keychain
 lazygit
 less
+libva-nvidia-driver
 linux
 linux-firmware
 linux-headers
+localsend-bin
 ly
 neovim
 networkmanager
