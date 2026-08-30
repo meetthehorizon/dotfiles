@@ -224,7 +224,7 @@ hl.bind("XF86Launch1", hl.dsp.exec_cmd("rog-control-center"))
 
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(
-  mainMod .. " + M",
+  mainMod .. " + X",
   hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'")
 )
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
@@ -299,6 +299,7 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true 
 
 hl.bind("ALT + N", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("ALT + P", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
+hl.bind("ALT + B", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
 hl.bind(
   "ALT + W",
