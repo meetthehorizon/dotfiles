@@ -1,0 +1,153 @@
+/* =========================================================================
+   1. THEME (Rosé Pine)
+   ========================================================================= */
+@import "themes/rose-pine.css";
+
+/* =========================================================================
+   2. GLOBAL RESETS & FONTS
+   ========================================================================= */
+* {
+  font-size: 12px;
+  font-family: "JetBrainsMono Nerd Font Mono", "Symbols Nerd Font", monospace;
+  font-weight: 500;
+  min-height: 0;
+}
+
+/* =========================================================================
+   3. WINDOW CONFIGURATION
+   ========================================================================= */
+window#waybar {
+  background: rgba(25, 23, 36, 0.1); /* base */
+}
+
+/* =========================================================================
+   4. MODULE LAYOUT
+   ========================================================================= */
+.modules-left,
+.modules-center,
+.modules-right {
+  padding: 4px;
+}
+
+/* =========================================================================
+   5. MODULE STYLES (frosted glass)
+   ========================================================================= */
+#window,
+#bluetooth,
+#clock,
+#network,
+#wireplumber,
+#cava,
+#battery,
+#backlight,
+#workspaces button,
+#custom-fan,
+#user,
+#mpris,
+#power-profiles-daemon,
+#tray {
+  padding: 3px 5px;
+  color: @text;
+  margin: 2px;
+  border-radius: 1px;
+  border: 0px solid rgba(224, 222, 244, 0.3);
+  box-shadow:
+    inset 0 1px 0 rgba(224, 222, 244, 0.06),
+    0 6px 20px rgba(0, 0, 0, 0.25);
+  background: @base;
+  transition: all 120ms ease-out;
+}
+
+#image {
+  margin: 2px;
+}
+
+/* =========================================================================
+   6. INTERACTIVE ELEMENTS (hover)
+   ========================================================================= */
+#workspaces button:hover,
+#clock:hover,
+#battery:hover,
+#network:hover,
+#bluetooth:hover,
+#wireplumber:hover,
+#cava:hover,
+#backlight:hover,
+#power-profiles-daemon:hover,
+#mpris:hover,
+#user:hover {
+  background: rgba(224, 222, 244, 0.1); /* text */
+}
+
+/* =========================================================================
+   7. TOOLTIPS
+   ========================================================================= */
+tooltip {
+  padding: 4px 6px;
+  margin: 3px;
+  border-radius: 5px;
+  border: 1px solid rgba(224, 222, 244, 0.3);
+  box-shadow:
+    inset 0 1px 0 rgba(224, 222, 244, 0.06),
+    0 6px 20px rgba(0, 0, 0, 0.25);
+  background: @surface;
+}
+
+/* =========================================================================
+   8. STATUS INDICATORS
+   ========================================================================= */
+
+/* --- Success / Good State (Pine) --- */
+#battery.charging,
+#power-profiles-daemon.power-saver {
+  border-color: rgba(49, 116, 143, 0.3);
+  color: rgba(49, 116, 143, 0.7);
+}
+
+/* --- Active / Focus State (Foam) --- */
+#window.active,
+#mpris {
+  border-color: rgba(156, 207, 216, 0.3);
+  color: rgba(156, 207, 216, 0.7);
+}
+
+/* --- Workspace Active (iris accent + surface bg) --- */
+#workspaces button.active {
+  color: @iris;
+  background: @surface;
+  border-color: @iris;
+}
+
+/* --- Warning / Progress State (Gold) --- */
+#battery.bat_30,
+#battery.bat_40,
+#battery.bat_50,
+#bluetooth.discovering,
+#bluetooth.discoverable,
+#mpris.paused,
+#power-profiles-daemon.balanced {
+  border-color: rgba(246, 193, 119, 0.1);
+  color: rgba(246, 193, 119, 0.7);
+}
+
+/* --- Critical / Urgent State (Love) --- */
+#battery.bat_0,
+#battery.bat_10,
+#battery.bat_20,
+#network.disabled,
+#network.disconnected,
+#bluetooth.disabled,
+#bluetooth.no-controller,
+#bluetooth.off,
+#wireplumber.muted,
+#power-profiles-daemon.performance {
+  border-color: rgba(235, 111, 146, 0.3);
+  color: rgba(235, 111, 146, 0.7);
+}
+
+/* --- Workspace Urgent (love bg + surface fg) --- */
+#workspaces button.urgent {
+  background: @love;
+  color: @surface;
+  border-color: @love;
+}
