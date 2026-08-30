@@ -84,7 +84,7 @@ hl.config({
       enabled = true,
       range = 4,
       render_power = 3,
-      color = 0xee1a1a1a,
+      color = "0xee1a1a1a",
     },
 
     blur = {
@@ -317,7 +317,7 @@ hl.bind(
 
 -- Example window rules that are useful
 
-local suppressMaximizeRule = hl.window_rule({
+hl.window_rule({
   -- Ignore maximize requests from all apps. You'll probably like this.
   name = "suppress-maximize-events",
   match = { class = ".*" },
