@@ -364,11 +364,3 @@ hl.window_rule({
   float = true,
   min_size = { 1000, 800 },
 })
-
-hl.window_rule({
-  name = "center-float-admin",
-  match = { class = "Alacritty", workspace = "special:admin" },
-  float = true,
-  min_size = { 1000, 800 },
-  max_size = { 1000, 800 },
-})
