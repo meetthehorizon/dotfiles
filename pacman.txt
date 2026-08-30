@@ -36,6 +36,9 @@ linux-firmware
 linux-headers
 localsend-bin
 ly
+man-db
+man-pages-uk
+mpv
 neovim
 networkmanager
 noto-fonts
