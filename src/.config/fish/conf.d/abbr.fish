@@ -26,4 +26,9 @@ if status is-interactive
     # CLI Tools
     abbr -a lg  lazygit
     abbr -a ff  fastfetch
+
+    # Proton Drive
+    abbr -a p   proton-drive
+    abbr -a pf  proton-drive filesystem
+    abbr -a pfl proton-drive filesystem list
 end
