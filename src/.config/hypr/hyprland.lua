@@ -21,7 +21,7 @@ hl.monitor({
 hl.monitor({
   output = "HDMI-A-1",
   mode = "1920x1080@120",
-  position = "auto-center-left",
+  position = "auto-center-right",
 })
 
 ---------------------
@@ -249,8 +249,8 @@ hl.bind("SUPER + SHIFT + M", hl.dsp.workspace.move({ monitor = "+1" }))
 hl.bind(mainMod .. " + A", hl.dsp.workspace.toggle_special("admin"))
 hl.bind(mainMod .. " + SHIFT + A", hl.dsp.window.move({ workspace = "special:admin" }))
 
-hl.bind(mainMod .. " + B", hl.dsp.workspace.toggle_special("browse"))
-hl.bind(mainMod .. " + SHIFT + B", hl.dsp.window.move({ workspace = "special:browse" }))
+hl.bind(mainMod .. " + B", hl.dsp.workspace.toggle_special("browser"))
+hl.bind(mainMod .. " + SHIFT + B", hl.dsp.window.move({ workspace = "special:browser" }))
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
