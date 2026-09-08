@@ -30,7 +30,7 @@ hl.monitor({
 
 -- Set programs that you use
 local browser = "firefox"
-local fileManager = "thunar"
+local fileManager = "nautilus"
 local menu = "fuzzel"
 local terminal = "alacritty"
 
@@ -360,7 +360,7 @@ hl.layer_rule({
 
 hl.window_rule({
   name = "center-float",
-  match = { class = "xdg-desktop-portal-gtk|.*rog-control-center|.*seahorse.*|[tT]hunar|.*localsend.*" },
+  match = { class = "xdg-desktop-portal-gtk|.*rog-control-center|.*seahorse.*|.*Nautilus|.*localsend.*" },
   float = true,
   min_size = { 1000, 800 },
 })
