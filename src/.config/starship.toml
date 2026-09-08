@@ -76,8 +76,8 @@ symbol = "󰙲 "
 
 [golang]
 format = "[$symbol($version )]($style)"
-version_format = "v${major}.{minor}"
-symbol = "󰟓 "
+version_format = "v${raw}"
+symbol = " "
 
 [haskell]
 format = "[$symbol($version )]($style)"
